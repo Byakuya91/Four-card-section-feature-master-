@@ -1,7 +1,7 @@
 /* STEP ONE: set up custom properties */
 :root {
     /*? Font style and weight styles */
-    --ff-sans: 'Poppins', sans-serif;
+    --ff-sans: 'Poppins', 'sans-serif';
     --fw-light: 200;
     --fw-normal: 400;
     --fw-bold: 600;
@@ -12,9 +12,9 @@
     --fs-900: 2.5rem;
     /* ? color styles */
     /* Color text */
-    --clr-netural-900: hsl(234, 12%, 34%);
-    --clr-netural-400: hsl(229, 6%, 66%);
-    --clr-netural-100: hsl(0, 0%, 98%);
+    --clr-neutral-900: hsl(234, 12%, 34%);
+    --clr-neutral-400: hsl(229, 6%, 66%);
+    --clr-neutral-100: hsl(0, 0%, 98%);
 
 
     /* Card banners */
@@ -31,7 +31,29 @@
         box-sizing: border-box;
     }
 
+    /* Font properties */
+    html {
+        /* font-family: var(--ff-sans); */
+        font-family: 'Poppins', sans-serif;
 
+        font-weight: var(--fw-normal);
+        line-height: 1.7;
+        color: var(--clr-neutral-900);
+    }
 
+    body {
+        margin: 0;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: var(--ff-sans);
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.1;
+        color: var(--clr-neutral-900);
+    }
+
+    .wrapper {}
 
 }
