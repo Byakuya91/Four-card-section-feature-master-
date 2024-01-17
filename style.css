@@ -71,3 +71,33 @@
 .wrapper--narrow {
     max-width: 550px;
 }
+
+/* header styles */
+
+header {
+    text-align: center;
+    margin-block: 6rem;
+    /* ?Helps visualize for layouts */
+    /* border: 2px solid red; */
+}
+
+/* layout styles */
+.layout-grid {
+    display: flex;
+
+}
+
+/* ? Columns are different height what do you do fix it? */
+/* grab all the cols and do a flex one on them. */
+
+/* ?direct child selection. */
+.layout-grid>* {
+    flex: 1;
+}
+
+
+/* col class */
+.col {
+    border: 4px solid dodgerblue;
+
+}
