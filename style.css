@@ -1,4 +1,5 @@
 /* STEP ONE: set up custom properties */
+/* STEP ONE: set up custom properties */
 :root {
     /*? Font style and weight styles */
     --ff-sans: 'Poppins', 'sans-serif';
@@ -15,6 +16,8 @@
     --clr-neutral-900: hsl(234, 12%, 34%);
     --clr-neutral-400: hsl(229, 6%, 66%);
     --clr-neutral-100: hsl(0, 0%, 98%);
+    /* ?Gap variables */
+    /* --gap: 2rem; */
 
 
     /* Card banners */
@@ -56,7 +59,6 @@
         color: var(--clr-neutral-900);
         line-height: 1.1;
     }
-
 }
 
 
@@ -83,9 +85,11 @@ header {
 
 /* layout styles */
 .layout-grid {
+    --gap: 2rem;
     display: flex;
-
+    gap: var(--gap);
 }
+
 
 /* ? Columns are different height what do you do fix it? */
 /* grab all the cols and do a flex one on them. */
@@ -98,6 +102,12 @@ header {
 
 /* col class */
 .col {
-    border: 4px solid dodgerblue;
+    display: grid;
+    gap: 5rem;
+}
 
+/* Card class for visualization */
+.card {
+    padding: 2rem;
+    background: #cdc8c8;
 }
