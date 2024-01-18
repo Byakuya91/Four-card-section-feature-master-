@@ -58,7 +58,7 @@
     h2,
     h3 {
         color: var(--clr-neutral-900);
-        line-height: 1.1;
+        line-height: 1.2;
     }
 }
 
@@ -75,13 +75,27 @@
     max-width: 550px;
 }
 
-/* header styles */
+/* header and h1 styles */
+
+h1 {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-900);
+}
+
+h1 span {
+    font-weight: var(--fw-bold);
+}
+
 
 header {
     text-align: center;
     margin-block: 6rem;
     /* ?Helps visualize for layouts */
     /* border: 2px solid red; */
+}
+
+header>p {
+    font-size: var(--fs-500);
 }
 
 /* layout styles */
@@ -109,7 +123,45 @@ header {
 }
 
 /* Card class for visualization */
+
 .card {
+    /* ? local scope variable */
+    --br: .325rem;
     padding: 2rem;
-    background: #cdc8c8;
+    border-top: var(--br) solid;
+    border-radius: var(--br);
+    box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100/0.16);
+}
+
+/*! Problem approach due to using flex instead of grid */
+/* .card:nth-child(1) {
+    border-color: var(--clr-teal);
+
+} */
+
+/* Card title styles */
+
+.card__title {
+    font-size: var(--fs-600);
+    margin: 0;
+
+}
+
+
+/* Card border modifier  styles */
+
+.border-teal {
+    border-color: var(--clr-teal);
+}
+
+.border-red {
+    border-color: var(--clr-red);
+}
+
+.border-yellow {
+    border-color: var(--clr-yellow);
+}
+
+.border-blue {
+    border-color: var(--clr-blue);
 }
